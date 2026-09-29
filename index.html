@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>گوگل جمینای پرو ۱۸ ماهه | فعال‌سازی قانونی و اختصاصی</title>
-  <meta name="description" content="اشتراک ۱۸ ماهه گوگل جمینای پرو همراه با ۵ ترابایت درایو، مدل‌های ساخت ویدیو Veo 3.1 و Omni، فعال‌سازی مستقیم روی جیمیل شخصی شما.">
+  <title>گوگل جمینای پرو ۱۸ ماهه | قیمت استثنایی و تعداد محدود</title>
+  <meta name="description" content="اشتراک ۱۸ ماهه گوگل جمینای پرو با قیمت استثنایی و ظرفیت محدود، همراه با ۵ ترابایت درایو و مدل‌های پیشرفته ساخت ویدیو.">
   
   <!-- فونت وزیرمتن -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,9 +19,9 @@
       --border-color: rgba(255, 255, 255, 0.08);
       --border-hover: rgba(120, 119, 198, 0.35);
       --gemini-gradient: linear-gradient(135deg, #4285f4 0%, #9b72cf 50%, #d96570 100%);
+      --gold-gradient: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%);
       --accent-blue: #4285f4;
       --accent-purple: #9b72cf;
-      --accent-cyan: #22d3ee;
       --accent-green: #10b981;
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
@@ -43,7 +43,7 @@
       min-height: 100vh;
     }
 
-    /* هاله‌های نوری پس‌زمینه */
+    /* هاله‌های نوری شناور در پس‌زمینه */
     .glow-bg {
       position: fixed;
       width: 550px;
@@ -54,41 +54,29 @@
       pointer-events: none;
       z-index: 0;
     }
-    .glow-1 {
-      top: -120px;
-      left: 10%;
-      background: #4285f4;
-    }
-    .glow-2 {
-      top: 35%;
-      right: 5%;
-      background: #9b72cf;
-    }
-    .glow-3 {
-      bottom: 5%;
-      left: 20%;
-      background: #d96570;
-    }
+    .glow-1 { top: -120px; left: 10%; background: #4285f4; }
+    .glow-2 { top: 35%; right: 5%; background: #9b72cf; }
+    .glow-3 { bottom: 5%; left: 20%; background: #d96570; }
 
     .container {
       max-width: 960px;
       margin: 0 auto;
-      padding: 30px 20px 80px;
+      padding: 24px 20px 80px;
       position: relative;
       z-index: 1;
     }
 
-    /* نوبار و لوگو */
+    /* نوبار */
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 16px 24px;
-      background: rgba(18, 20, 29, 0.6);
+      background: rgba(18, 20, 29, 0.65);
       backdrop-filter: blur(16px);
       border: 1px solid var(--border-color);
       border-radius: 20px;
-      margin-bottom: 40px;
+      margin-bottom: 25px;
     }
 
     .brand {
@@ -119,6 +107,7 @@
       font-size: 0.85rem;
       font-weight: 600;
     }
+
     .status-dot {
       width: 8px;
       height: 8px;
@@ -128,10 +117,103 @@
       animation: pulse 2s infinite;
     }
 
-    /* بخش Hero */
+    /* =========================================
+       بخش جدید: کادر بزرگ قیمت استثنایی و تعداد محدود
+       ========================================= */
+    .deal-hero-box {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(239, 68, 68, 0.12) 50%, rgba(147, 51, 234, 0.12) 100%);
+      border: 2px solid rgba(245, 158, 11, 0.45);
+      border-radius: 24px;
+      padding: 24px 20px;
+      margin-bottom: 30px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 12px 40px rgba(245, 158, 11, 0.15);
+      animation: borderGlow 4s infinite alternate;
+    }
+
+    .deal-tags-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .deal-tag-pill {
+      font-size: 0.88rem;
+      font-weight: 800;
+      padding: 6px 16px;
+      border-radius: 50px;
+      letter-spacing: -0.2px;
+    }
+
+    .tag-fire {
+      background: linear-gradient(135deg, #ef4444, #f97316);
+      color: #ffffff;
+      box-shadow: 0 4px 15px rgba(239, 68, 68, 0.35);
+    }
+
+    .tag-stock {
+      background: rgba(239, 68, 68, 0.18);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      color: #fca5a5;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pulse-dot-red {
+      width: 9px;
+      height: 9px;
+      background: #ef4444;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #ef4444;
+      animation: pulse 1.4s infinite;
+    }
+
+    /* متن فوق‌العاده درشت */
+    .deal-main-title {
+      font-size: clamp(2rem, 5.5vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.25;
+      margin: 8px 0 12px;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .gold-shimmer {
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 2px 10px rgba(245, 158, 11, 0.3));
+    }
+
+    .red-shimmer {
+      color: #ff5252;
+      text-shadow: 0 0 20px rgba(255, 82, 82, 0.45);
+    }
+
+    .deal-divider {
+      color: #94a3b8;
+      font-size: 1.8rem;
+    }
+
+    .deal-subtitle {
+      color: #e2e8f0;
+      font-size: 1.05rem;
+      font-weight: 500;
+    }
+
+    /* Hero */
     .hero {
       text-align: center;
-      padding: 20px 0 45px;
+      padding: 10px 0 35px;
     }
 
     .top-pill {
@@ -140,20 +222,19 @@
       gap: 8px;
       background: rgba(66, 133, 244, 0.12);
       border: 1px solid rgba(66, 133, 244, 0.3);
-      padding: 8px 18px;
+      padding: 7px 18px;
       border-radius: 50px;
       font-size: 0.9rem;
       font-weight: 600;
       color: #93c5fd;
-      margin-bottom: 22px;
+      margin-bottom: 18px;
     }
 
     h1 {
-      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
       font-weight: 900;
-      line-height: 1.25;
+      line-height: 1.35;
       margin-bottom: 20px;
-      letter-spacing: -0.5px;
     }
 
     .gradient-text {
@@ -163,23 +244,22 @@
       display: inline-block;
     }
 
-    /* بنر طلایی فرصت ویژه */
+    /* بنر طلایی ۱۸ ماهه */
     .urgent-banner {
       background: linear-gradient(135deg, rgba(234, 88, 12, 0.12) 0%, rgba(245, 158, 11, 0.08) 100%);
       border: 1px solid rgba(245, 158, 11, 0.35);
       border-radius: 16px;
-      padding: 20px 24px;
-      margin: 25px auto 35px;
+      padding: 18px 22px;
+      margin: 20px auto 30px;
       max-width: 760px;
       box-shadow: 0 8px 24px rgba(245, 158, 11, 0.08);
-      position: relative;
     }
 
     .urgent-banner h3 {
       color: #fbbf24;
-      font-size: 1.15rem;
+      font-size: 1.12rem;
       font-weight: 800;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -188,7 +268,7 @@
 
     .urgent-banner p {
       color: #fde68a;
-      font-size: 0.98rem;
+      font-size: 0.95rem;
       font-weight: 500;
     }
 
@@ -197,7 +277,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 16px;
-      margin-bottom: 50px;
+      margin-bottom: 45px;
     }
 
     .trust-item {
@@ -242,14 +322,14 @@
     .section-title {
       font-size: 1.8rem;
       font-weight: 800;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
     .section-subtitle {
       color: var(--text-muted);
       font-size: 0.95rem;
     }
 
-    /* شبکه کارت‌های امکانات (Bento Grid) */
+    /* شبکه کارت‌های امکانات */
     .features-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -277,7 +357,6 @@
       box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
     }
 
-    /* کارت ویژه (هایلایت) */
     .feature-card.highlight {
       background: linear-gradient(145deg, rgba(66, 133, 244, 0.12) 0%, rgba(155, 114, 207, 0.08) 100%);
       border-color: rgba(66, 133, 244, 0.35);
@@ -320,7 +399,7 @@
       line-height: 1.6;
     }
 
-    /* بخش اقدام به عمل (CTA) */
+    /* بخش ثبت سفارش و CTA */
     .cta-card {
       background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.9) 100%);
       border: 1px solid rgba(255, 255, 255, 0.12);
@@ -376,7 +455,6 @@
       box-shadow: 0 14px 30px rgba(155, 114, 207, 0.5);
     }
 
-    /* فوتر */
     footer {
       text-align: center;
       margin-top: 50px;
@@ -385,30 +463,37 @@
     }
 
     @keyframes pulse {
-      0% { opacity: 0.6; transform: scale(0.95); }
+      0% { opacity: 0.6; transform: scale(0.92); }
       50% { opacity: 1; transform: scale(1.15); }
-      100% { opacity: 0.6; transform: scale(0.95); }
+      100% { opacity: 0.6; transform: scale(0.92); }
+    }
+
+    @keyframes borderGlow {
+      0% { border-color: rgba(245, 158, 11, 0.4); box-shadow: 0 8px 30px rgba(245, 158, 11, 0.12); }
+      100% { border-color: rgba(239, 68, 68, 0.6); box-shadow: 0 12px 45px rgba(239, 68, 68, 0.25); }
     }
 
     @media (max-width: 640px) {
-      .container { padding: 20px 14px 60px; }
-      header { padding: 12px 16px; margin-bottom: 25px; }
+      .container { padding: 16px 14px 60px; }
+      header { padding: 12px 16px; margin-bottom: 18px; }
+      .deal-hero-box { padding: 20px 14px; }
+      .deal-main-title { font-size: 1.85rem; }
       .urgent-banner { padding: 16px; }
-      .cta-card { padding: 30px 18px; }
-      .btn-action { width: 100%; }
+      .cta-card { padding: 30px 16px; }
+      .btn-action { width: 100%; font-size: 1rem; }
     }
   </style>
 </head>
 <body>
 
-  <!-- جلوه‌های نوری بک‌گراند -->
+  <!-- هاله‌های نوری -->
   <div class="glow-bg glow-1"></div>
   <div class="glow-bg glow-2"></div>
   <div class="glow-bg glow-3"></div>
 
   <div class="container">
 
-    <!-- نوار بالای سایت -->
+    <!-- نوبار -->
     <header>
       <div class="brand">
         <div class="gemini-sparkle"></div>
@@ -420,6 +505,27 @@
       </div>
     </header>
 
+    <!-- کادر برجسته و درشت در همان ابتدا: قیمت استثنایی و تعداد محدود -->
+    <div class="deal-hero-box">
+      <div class="deal-tags-wrapper">
+        <span class="deal-tag-pill tag-fire">🔥 تخفیف ویژه و استثنایی</span>
+        <span class="deal-tag-pill tag-stock">
+          <span class="pulse-dot-red"></span>
+          ظرفیت فوق‌العاده محدود
+        </span>
+      </div>
+
+      <div class="deal-main-title">
+        <span class="gold-shimmer">قیمت استثنایی</span>
+        <span class="deal-divider">✦</span>
+        <span class="red-shimmer">به تعداد کاملاً محدود</span>
+      </div>
+
+      <p class="deal-subtitle">
+        مهلت ثبت سفارش فقط تا پایان ظرفیت سهمیه فعال‌سازی ۱۸ ماهه
+      </p>
+    </div>
+
     <!-- بخش اصلی / Hero -->
     <section class="hero">
       <div class="top-pill">
@@ -427,7 +533,7 @@
       </div>
       
       <h1>
-        نهایت هوش مصنوعی با<br>
+        تجربه بی‌نهایت هوش مصنوعی با<br>
         <span class="gradient-text">گوگل جمینای پرو (Gemini Pro)</span>
       </h1>
 
@@ -475,7 +581,7 @@
           <span class="card-tag tag-pro">مدل هوشمند اصلی</span>
         </div>
         <h3 class="card-title">جمینای AI پرو (18 ماهه)</h3>
-        <p class="card-desc">دسترسی کامل به پیشرفته‌ترین چت‌بات و موتور استدلال جمینای با سرعت پردازش فوق‌العاده و پاسخگویی دقیق و عمیق.</p>
+        <p class="card-desc">دسترسی کامل به پیشرفته‌ترین چت‌بات و موتور استدلال جمینای با سرعت پردازش بالا و پاسخگویی عمیق.</p>
       </div>
 
       <!-- کارت 2: درایو 5 ترابایت -->
@@ -485,7 +591,7 @@
           <span class="card-tag tag-pro">فضای ابری عظیم</span>
         </div>
         <h3 class="card-title">۵ ترابایت گوگل درایو</h3>
-        <p class="card-desc">فضای ذخیره‌سازی ابری بسیار گسترده با بالاترین امنیت برای تمام فایل‌ها، پروژه‌ها و بک‌آپ‌های سازمانی و شخصی.</p>
+        <p class="card-desc">فضای ذخیره‌سازی ابری گسترده با نهایت امنیت گوگل برای تمام فایل‌ها، پروژه‌ها و بک‌آپ‌های شخصی و کاری.</p>
       </div>
 
       <!-- کارت 3: ویدیو Omni و Veo 3.1 -->
@@ -495,7 +601,7 @@
           <span class="card-tag">مولتی‌مدیا</span>
         </div>
         <h3 class="card-title">مدل‌های Omni و Veo 3.1</h3>
-        <p class="card-desc">ساخت و تولید ویدیو با کیفیت و جزئیات سینمایی با استفاده از مدل‌های اختصاصی گوگل (تا ۵۰ عدد ویدیو در هر ماه).</p>
+        <p class="card-desc">ساخت و تولید ویدیو با کیفیت و جزئیات سینمایی با استفاده از مدل‌های اختصاصی گوگل (تا ۵۰ عدد در ماه).</p>
       </div>
 
       <!-- کارت 4: نانو بنانا پرو -->
@@ -505,7 +611,7 @@
           <span class="card-tag">نامحدود و رایگان</span>
         </div>
         <h3 class="card-title">تولید تصویر با نانو بنانا پرو</h3>
-        <p class="card-desc">خلق تصاویر دیجیتال فوق‌العاده با رزولوشن بالا؛ کاملاً رایگان و بدون کم‌شدن حتی یک واحد از اعتبار اکانت شما.</p>
+        <p class="card-desc">خلق تصاویر دیجیتال فوق‌العاده با کیفیت بالا؛ کاملاً رایگان و بدون کسر حتی ۱ واحد از اعتبار اکانت.</p>
       </div>
 
       <!-- کارت 5: گروه فامیلی 5 نفره -->
@@ -515,7 +621,7 @@
           <span class="card-tag">اشتراک خانوادگی</span>
         </div>
         <h3 class="card-title">گروه فامیلی (Family Group)</h3>
-        <p class="card-desc">امکان اضافه کردن تا ۵ نفر از دوستان یا اعضای خانواده و اشتراک‌گذاری قانونی مزایای طرح بدون پرداخت هزینه جداگانه.</p>
+        <p class="card-desc">امکان اضافه کردن تا ۵ نفر از دوستان یا اعضای خانواده و اشتراک‌گذاری قانونی مزایای طرح بدون هزینه مجدد.</p>
       </div>
 
       <!-- کارت 6: گوگل فلو 1000 کردیت -->
@@ -525,7 +631,7 @@
           <span class="card-tag">اتوماسیون</span>
         </div>
         <h3 class="card-title">گوگل فلو با ۱۰۰۰ کردیت ماهانه</h3>
-        <p class="card-desc">اجرای پایپ‌لاین‌های هوشمند، پردازش ابری و گردش‌کارهای خودکار پیشرفته با شارژ ماهانه ۱۰۰۰ کردیت اختصاصی.</p>
+        <p class="card-desc">اجرای پایپ‌لاین‌های هوشمند، پردازش ابری و گردش‌کارهای خودکار با شارژ ماهانه ۱۰۰۰ کردیت اختصاصی.</p>
       </div>
 
       <!-- کارت 7: نوت‌بوک ال‌ام -->
@@ -535,7 +641,7 @@
           <span class="card-tag">پژوهش و تحلیل</span>
         </div>
         <h3 class="card-title">فعال شدن اشتراک NotebookLM</h3>
-        <p class="card-desc">دستیار تخصصی تحقیق، خلاصه‌سازی و یادداشت‌‌برداری هوشمند بر اساس اسناد، فایل‌های PDF و منابع اطلاعاتی شما.</p>
+        <p class="card-desc">دستیار تخصصی تحقیق، خلاصه‌سازی و یادداشت‌‌برداری هوشمند بر اساس اسناد، کتاب‌ها و فایل‌های PDF شما.</p>
       </div>
 
       <!-- کارت 8: آنتی گراویتی فلو ۲ -->
@@ -545,25 +651,25 @@
           <span class="card-tag">سرعت و جریان پایدار</span>
         </div>
         <h3 class="card-title">آنتی-گراویتی فلو ۲</h3>
-        <p class="card-desc">تضمین پایداری، کاهش تأخیر شبکه در ارتباط با سرورهای گوگل و تجربه جریان کاری کاملاً نرم و بی‌وقفه.</p>
+        <p class="card-desc">تضمین پایداری ارتباط، کاهش تأخیر شبکه در کار با ابزارهای گوگل و تجربه کاری کاملاً روان و بی‌وقفه.</p>
       </div>
 
     </div>
 
     <!-- کارت ثبت سفارش و پشتیبانی -->
     <section class="cta-card">
-      <h3 class="cta-title">آماده ورود به دنیای حرفه‌ای گوگل هستید؟</h3>
-      <p class="cta-desc">فعال‌سازی در کمتر از چند دقیقه و بدون دریافت پسورد روی جیمیل شما انجام خواهد شد.</p>
+      <h3 class="cta-title">ثبت سفارش فوری با تخفیف ویژه</h3>
+      <p class="cta-desc">جهت استعلام قیمت استثنایی و فعال‌سازی فوری قبل از اتمام موجودی، با پشتیبانی در ارتباط باشید.</p>
       
       <a href="https://t.me/Robot_7x" target="_blank" class="btn-action">
         <span>💬</span>
-        <span>ثبت سفارش و ارتباط با پشتیبانی (Robot_7x@)</span>
+        <span>استعلام قیمت و ثبت سفارش (Robot_7x@)</span>
       </a>
     </section>
 
-    <!-- فوتر ساده -->
+    <!-- فوتر -->
     <footer>
-      <p>کلیه حقوق محفوظ است © ۲۰۲۶ — فعال‌سازی روی سرور رسمی گوگل و تحت گارانتی</p>
+      <p>کلیه حقوق محفوظ است © ۲۰۲۶ — فعال‌سازی روی سرور رسمی گوگل و تحت گارانتی تعویض</p>
     </footer>
 
   </div>
